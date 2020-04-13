@@ -28,7 +28,7 @@ end
 
 def factorial(nb)
 	if nb > 0 #si le nombre est supérieur = 0
-		nb = nb * factorial(nb-1) #Mutiplies chaques nombbre entre eux 
+		nb = (1..nb).inject(:*) # On utilise la fonction inject qui va mutiplier les nombres entre eux de 1 à n (le parametre) grace à (:*) - (Factoriel de 10 = 1*2*3*4*5*6*7*8*9*10)
 	else #Sinon le résultat est 1 car 0! = 1 (factoriel de 0 = 1)
 		nb = 1
 	end

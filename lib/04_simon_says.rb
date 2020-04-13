@@ -19,7 +19,7 @@ end
 def start_of_word(string,*opt) #*param permet d'avoir un parametre optionnel
 	if opt.size > 0 #Si la taille du parametre 2 est supérieur à zero
 		if opt.join.to_i <= string.length #Si le parametres 2 est inférieur ou égale à la taille du parametre 1
-			return string[0,opt.join.to_i] #Selection les premieres lettre du parametre 1 jusqu'au parametre 2 grace à [0,valeur]
+			return string[0,opt.join.to_i] #Selectionne les premieres lettre du parametre 1 jusqu'au parametre 2 grace à [0,valeur]
 		else
 			return "Erreur : Le mot à moins de caractère que le découpage souhaité" #Sinon on renvoie une erreur
 		end
